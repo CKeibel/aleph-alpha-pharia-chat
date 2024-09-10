@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "aleph-alpha-chat"
+version = "0.1.0"
+description = ""
+authors = ["Christopher Keibel <christopher.keibel.90@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+transformers = "^4.44.2"
+gradio = "^4.42.0"
+torch = {version = "2.0.0", source = "pytorch"}
+accelerate = "^0.33.0"
+
+
+[[tool.poetry.source]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu117"
+priority = "explicit"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
